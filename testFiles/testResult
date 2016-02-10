@@ -1,0 +1,2226 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDMNODE_21454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process ReaerationEDMNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE_21454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_REAERATIONEDM> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to ReaerationEDMNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/ReaerationEDM/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/FILTERTIMESTAMPSANDDATANODE_11454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process FilterTimestampsAndDataNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FORMATTEDDATA_11454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_FILTERTIMESTAMPSANDDATA> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to FilterTimestampsAndDataNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/FilterTimestampsAndData/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Hourly_Averaged_Daily_Data>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE1454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process NightTimeModelNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_11454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_NIGHTTIMEMODEL> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to NightTimeModelNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/NightTimeModel/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCEMPIRICALNODE_11454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process MetabolismCalcEmpiricalNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_11454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/REAERATIONPARAMS_11454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_21454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCEMPIRICAL> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MetabolismCalcEmpiricalNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalcEmpirical/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionProcess> , <http://purl.org/net/opmv/ns#Process> ;
+        rdfs:label  "Execution process MergeMetabolismResultsNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMEDM1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMNTM1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_MERGEMETABOLISMRESULTS> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MergeMetabolismResultsNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MergeMetabolismResults/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+        a       owl:DatatypeProperty .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPARAMETERSFILENODE_11454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionProcess> , <http://purl.org/net/opmv/ns#Process> ;
+        rdfs:label  "Execution process CreateParametersFileNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/ParameterVariable/DEPTH_11454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/FLOW_11454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/DATE_11454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/BARPRESS1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/VELOCITY_11454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_21454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/SLOPE1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to CreateParametersFileNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/ALGORITHM1454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/wf-invocation#Variable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#AlgoFile> , <http://purl.org/net/opmv/ns#Artifact> , rdfs:Resource ;
+        rdfs:comment  "center:x=1630.4,y=1269.3333333333333" ;
+        rdfs:label    "Workflow execution artifact: Algorithm1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_ALGORITHM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Algo_SMN_2010-03-07Z_NTM_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTPARAMS_21454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#NTM_Parameters> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Parameters> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/wf-invocation#Variable> , <http://purl.org/net/opmv/ns#Artifact> ;
+        rdfs:comment  "center:x=650.3000000000001,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: NightParams_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTPARAMS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-09Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMNTM1454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , rdfs:Resource , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> ;
+        rdfs:comment  "center:x=1783.3000000000002,y=1094.6666666666667" ;
+        rdfs:label    "Workflow execution artifact: MetabolismNTM1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCULATIONNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMNTM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_NTM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://www.opmw.org/ontology/ParameterVariable>
+        a       owl:Class .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Filtered_Sensor_Data>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/ParameterVariable/FLOW_11454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 1611.0309" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_FLOW> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "1611.0309" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 37.347214" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LATITUDE> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "37.347214" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NDM1454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#PlotImage> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/opmv/ns#Artifact> , <http://purl.org/net/wf-invocation#Variable> , rdfs:Resource , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:comment  "center:x=1238.8000000000002,y=1444.0" ;
+        rdfs:label    "Workflow execution artifact: NDM1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPLOTSNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NDM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/NDM-e1enivjl8256qpfpah59s9y69"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#plotType>
+                "NDM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCEMPIRICALNODE_21454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionProcess> , <http://purl.org/net/opmv/ns#Process> ;
+        rdfs:label  "Execution process MetabolismCalcEmpiricalNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/REAERATIONPARAMS_21454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_31454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_21454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCEMPIRICAL> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MetabolismCalcEmpiricalNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalcEmpirical/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/DEPTH_11454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 1.0582844" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DEPTH> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "1.0582844" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMATNODE_31454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process ConvertToStandardFormatNode_3" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DAILYDATA_31454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CONVERTTOSTANDARDFORMAT> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to ConvertToStandardFormatNode_3" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/ConvertToStandardFormat/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/MERGEDRESULTS_21454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> , <http://www.w3.org/ns/prov#Entity> , rdfs:Resource , <http://purl.org/net/wf-invocation#Variable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> ;
+        rdfs:comment  "center:x=792.2,y=1269.3333333333333" ;
+        rdfs:label    "Workflow execution artifact: MergedResults_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_MERGEDRESULTS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_NTM_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.opmw.org/ontology/createdInWorkflowSystem>
+        a       owl:DatatypeProperty .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#AlgoFile>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA1454516287417>
+        a             <http://www.w3.org/ns/prov#Entity> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Hourly_Averaged_Daily_Data> ;
+        rdfs:comment  "center:x=1972.5000000000002,y=745.3333333333334" ;
+        rdfs:label    "Workflow execution artifact: HourlyData1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CALCULATEHOURLYAVERAGESNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-06Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.2150836" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1868.2474" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-05" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.7402442" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPARAMETERSFILENODE_21454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process CreateParametersFileNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/ParameterVariable/SLOPE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_31454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/FLOW_21454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/VELOCITY_21454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/DEPTH_21454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/BARPRESS1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/DATE_21454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to CreateParametersFileNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/ontology/correspondsToTemplateProcess>
+        a       rdf:Property .
+
+<http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+        a       rdf:Property .
+
+<http://openprovenance.org/model/opmo#Account>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE_11454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process NightTimeModelNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_21454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_11454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_NIGHTTIMEMODEL> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to NightTimeModelNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/NightTimeModel/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/FLOW_21454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 1377.2166" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_FLOW> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "1377.2166" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPLOTSNODE1454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process CreatePlotsNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/MERGEDRESULTS_21454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/MERGEDRESULTS_11454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/MERGEDRESULTS1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to CreatePlotsNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/CreatePlots/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/VELOCITY1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 0.73136413" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_VELOCITY> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "0.73136413" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE_11454516287417>
+        a             <http://purl.org/net/opmv/ns#Artifact> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Parameters> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> ;
+        rdfs:comment  "center:x=1459.9,y=745.3333333333334" ;
+        rdfs:label    "Workflow execution artifact: ParametersFile_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPARAMETERSFILENODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-08Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_11454516287417>
+        a             <http://purl.org/net/opmv/ns#Artifact> , <http://purl.org/net/wf-invocation#Variable> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Hourly_Averaged_Daily_Data> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> ;
+        rdfs:comment  "center:x=1600.7,y=570.6666666666666" ;
+        rdfs:label    "Workflow execution artifact: HourlyData_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CALCULATEHOURLYAVERAGESNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-07Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://www.w3.org/ns/prov#Entity>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/CR241454516287417>
+        a             rdfs:Resource , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#PlotImage> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/wf-invocation#Variable> ;
+        rdfs:comment  "center:x=775.7,y=1444.0" ;
+        rdfs:label    "Workflow execution artifact: CR241454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPLOTSNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_CR24> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/CR24-9rj578k5ctkkrq2io6vnhv9av"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#plotType>
+                "CR24" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMEDM1454516287417>
+        a             <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://purl.org/net/wf-invocation#Variable> , rdfs:Resource , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> ;
+        rdfs:comment  "center:x=2056.1000000000004,y=1094.6666666666667" ;
+        rdfs:label    "Workflow execution artifact: MetabolismEDM1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCEMPIRICALNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMEDM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "EDM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/ParameterVariable/DEPTH_21454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 0.9157512" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DEPTH> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "0.9157512" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DAILYDATA_11454516287417>
+        a             <http://purl.org/net/wf-invocation#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , rdfs:Resource , <http://purl.org/net/opmv/ns#Artifact> ;
+        rdfs:comment  "center:x=1600.7,y=46.66666666666667" ;
+        rdfs:label    "Workflow execution artifact: DailyData_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_DAILYDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/CDEC_WEATHER_2010_03_07"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+rdfs:Resource  a  owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCEMPIRICALNODE1454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process MetabolismCalcEmpiricalNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/REAERATIONPARAMS1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_11454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCEMPIRICAL> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MetabolismCalcEmpiricalNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalcEmpirical/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/DATE1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 2010-03-07Z" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DATE> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "2010-03-07Z" .
+
+<http://www.opmw.org/export/resource/Agent/ADMIN>
+        a           <http://purl.org/net/opmv/ns#Agent> ;
+        rdfs:label  "Agent admin" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTPARAMS1454516287417>
+        a             rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#NTM_Parameters> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Parameters> ;
+        rdfs:comment  "center:x=1908.7,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: NightParams1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTPARAMS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-07Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FORMATTEDDATA_31454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> ;
+        rdfs:comment  "center:x=231.20000000000002,y=221.33333333333334" ;
+        rdfs:label    "Workflow execution artifact: FormattedData_31454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMATNODE_31454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FORMATTEDDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-09Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMNTM_11454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , rdfs:Resource , <http://purl.org/net/wf-invocation#Variable> ;
+        rdfs:comment  "center:x=1055.1000000000001,y=1094.6666666666667" ;
+        rdfs:label    "Workflow execution artifact: MetabolismNTM_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCULATIONNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMNTM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_NTM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE_21454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/wf-invocation#Variable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Parameters> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , rdfs:Resource ;
+        rdfs:comment  "center:x=221.3,y=745.3333333333334" ;
+        rdfs:label    "Workflow execution artifact: ParametersFile_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPARAMETERSFILENODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-09Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_21454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://purl.org/net/wf-invocation#Variable> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Hourly_Averaged_Daily_Data> ;
+        rdfs:comment  "center:x=828.5000000000001,y=570.6666666666666" ;
+        rdfs:label    "Workflow execution artifact: HourlyData_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CALCULATEHOURLYAVERAGESNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-08Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMEDM_11454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> , <http://purl.org/net/opmv/ns#Artifact> , <http://purl.org/net/wf-invocation#Variable> , rdfs:Resource , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:comment  "center:x=1323.5,y=1094.6666666666667" ;
+        rdfs:label    "Workflow execution artifact: MetabolismEDM_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCEMPIRICALNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMEDM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "EDM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+        a       owl:DatatypeProperty .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/ALGORITHM_11454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#AlgoFile> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/opmv/ns#Artifact> ;
+        rdfs:comment  "center:x=1071.6000000000001,y=1269.3333333333333" ;
+        rdfs:label    "Workflow execution artifact: Algorithm_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_ALGORITHM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Algo_SMN_2010-03-08Z_NTM_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTDO1454516287417>
+        a             rdfs:Resource , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Mean_Night_DO> ;
+        rdfs:comment  "center:x=1694.2,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: NightDO1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTDO> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-07Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://www.opmw.org/ontology/WorkflowExecutionProcess>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDMNODE1454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process ReaerationEDMNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_REAERATIONEDM> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to ReaerationEDMNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/ReaerationEDM/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE_11454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionProcess> , <http://purl.org/net/opmv/ns#Process> ;
+        rdfs:label  "Execution process MergeMetabolismResultsNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMEDM_11454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMNTM_11454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_MERGEMETABOLISMRESULTS> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MergeMetabolismResultsNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MergeMetabolismResults/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM>
+        <http://www.opmw.org/ontology/createdInWorkflowSystem>
+                "http://wings-workflows.org/"^^xsd:anyURI .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMNTM_21454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> , <http://www.w3.org/ns/prov#Entity> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/wf-invocation#Variable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> ;
+        rdfs:comment  "center:x=566.7,y=1094.6666666666667" ;
+        rdfs:label    "Workflow execution artifact: MetabolismNTM_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCULATIONNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMNTM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_NTM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FILTEREDDATA1454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Filtered_Sensor_Data> , <http://www.w3.org/ns/prov#Entity> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> ;
+        rdfs:comment  "center:x=2221.1000000000004,y=570.6666666666666" ;
+        rdfs:label    "Workflow execution artifact: FilteredData1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/FILTERTIMESTAMPSANDDATANODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FILTEREDDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-06Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.2150836" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1868.2474" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-05" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.7402442" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_31454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Hourly_Averaged_Daily_Data> ;
+        rdfs:comment  "center:x=231.20000000000002,y=570.6666666666666" ;
+        rdfs:label    "Workflow execution artifact: HourlyData_31454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CALCULATEHOURLYAVERAGESNODE_31454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/AvgHourly_SMN_2010-03-09Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/GPP1454516287417>
+        a             <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#PlotImage> , rdfs:Resource , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> ;
+        rdfs:comment  "center:x=1006.7,y=1444.0" ;
+        rdfs:label    "Workflow execution artifact: GPP1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPLOTSNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_GPP> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/GPP-aqfuzk04634qikp55ep4rgm8f"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#plotType>
+                "GPP" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMEDM_21454516287417>
+        a             <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/wf-invocation#Variable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> ;
+        rdfs:comment  "center:x=290.6,y=1094.6666666666667" ;
+        rdfs:label    "Workflow execution artifact: MetabolismEDM_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCEMPIRICALNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMEDM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-09Z_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "EDM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/REAERATIONPARAMS1454516287417>
+        a             <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Reaeration_Empirical_Results> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , rdfs:Resource , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> ;
+        rdfs:comment  "center:x=2213.4,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: ReaerationParams1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDMNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_REAERATIONPARAMS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-07Z_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "EDM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/ALGORITHM_21454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/wf-invocation#Variable> , rdfs:Resource , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#AlgoFile> ;
+        rdfs:comment  "center:x=512.8000000000001,y=1269.3333333333333" ;
+        rdfs:label    "Workflow execution artifact: Algorithm_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_ALGORITHM> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Algo_SMN_2010-03-09Z_NTM_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#plotType>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE1454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , rdfs:Resource , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Parameters> ;
+        rdfs:comment  "center:x=2176.0,y=745.3333333333334" ;
+        rdfs:label    "Workflow execution artifact: ParametersFile1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPARAMETERSFILENODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Params_SMN_2010-03-07Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMATNODE_11454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process ConvertToStandardFormatNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DAILYDATA_11454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CONVERTTOSTANDARDFORMAT> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to ConvertToStandardFormatNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/ConvertToStandardFormat/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTDO_11454516287417>
+        a             rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Mean_Night_DO> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> ;
+        rdfs:comment  "center:x=881.3000000000001,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: NightDO_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTDO> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-08Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/BARPRESS1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 760.0" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_BARPRESS> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "760.0" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417>
+        a           <http://openprovenance.org/model/opmo#Account> , <http://www.opmw.org/ontology/WorkflowExecutionAccount> ;
+        rdfs:label  "Execution account created on 1454516287417" ;
+        <http://purl.org/dc/elements/1.1/rights>
+                "http://creativecommons.org/licenses/by-sa/3.0/"^^xsd:anyURI ;
+        <http://www.opmw.org/ontology/correspondsToTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> ;
+        <http://www.opmw.org/ontology/hasOriginalLogFile>
+                "http://www.wings-workflows.org/wings-portal/export/users/admin/Water/executions/AquaFlow_NTM_EDM-82ac8c45-1d2d-43bf-947b-1eb40b68e783.owl#"^^xsd:anyURI ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" ;
+        <http://www.opmw.org/ontology/overallEndTime>
+                "2015-01-19T13:30:22.578Z"^^xsd:dateTime ;
+        <http://www.opmw.org/ontology/overallStartTime>
+                "2015-01-19T13:30:13.436Z"^^xsd:dateTime .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FILTEREDDATA_31454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Filtered_Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , rdfs:Resource , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> ;
+        rdfs:comment  "center:x=231.20000000000002,y=396.0" ;
+        rdfs:label    "Workflow execution artifact: FilteredData_31454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/FILTERTIMESTAMPSANDDATANODE_31454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FILTEREDDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-09Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE_21454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionProcess> , <http://purl.org/net/opmv/ns#Process> ;
+        rdfs:label  "Execution process MergeMetabolismResultsNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMEDM_21454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/METABOLISMNTM_21454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_MERGEMETABOLISMRESULTS> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MergeMetabolismResultsNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MergeMetabolismResults/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/ontology/hasLocation>
+        a       owl:DatatypeProperty , rdf:Property .
+
+<http://www.opmw.org/ontology/WorkflowExecutionArtifact>
+        a       owl:Class .
+
+<http://www.opmw.org/ontology/hasOriginalLogFile>
+        a       owl:DatatypeProperty .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/ontology/overallEndTime>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CALCULATEHOURLYAVERAGESNODE_21454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process CalculateHourlyAveragesNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FILTEREDDATA_21454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CALCULATEHOURLYAVERAGES> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to CalculateHourlyAveragesNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/CalculateHourlyAverages/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/FILTERTIMESTAMPSANDDATANODE_21454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process FilterTimestampsAndDataNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FORMATTEDDATA_21454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_FILTERTIMESTAMPSANDDATA> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to FilterTimestampsAndDataNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/FilterTimestampsAndData/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMATNODE_21454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process ConvertToStandardFormatNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DAILYDATA_21454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CONVERTTOSTANDARDFORMAT> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to ConvertToStandardFormatNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/ConvertToStandardFormat/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/REAERATIONPARAMS_11454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Reaeration_Empirical_Results> , rdfs:Resource , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/wf-invocation#Variable> ;
+        rdfs:comment  "center:x=1450.0000000000002,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: ReaerationParams_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDMNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_REAERATIONPARAMS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-08Z_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "EDM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/MERGEDRESULTS_11454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , rdfs:Resource , <http://purl.org/net/wf-invocation#Variable> , <http://purl.org/net/opmv/ns#Artifact> ;
+        rdfs:comment  "center:x=1351.0,y=1269.3333333333333" ;
+        rdfs:label    "Workflow execution artifact: MergedResults_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_MERGEDRESULTS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-08Z_NTM_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTDO_21454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Mean_Night_DO> , rdfs:Resource , <http://www.w3.org/ns/prov#Entity> ;
+        rdfs:comment  "center:x=452.3,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: NightDO_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTDO> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/DO_SMN_2010-03-09Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://purl.org/net/opmv/ns#used>
+        a       rdf:Property .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+        a       owl:DatatypeProperty .
+		
+<http://www.opmw.org/export/resource/ParameterVariable/SLOPE1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 1.0E-4" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_SLOPE> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "1.0E-4" .
+				
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCULATIONNODE_11454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process MetabolismCalculationNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTDO_11454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTPARAMS_11454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE_11454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCULATION> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MetabolismCalculationNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalculation/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#NTM_Parameters>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/ParameterVariable/VELOCITY_11454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 0.6696845" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_VELOCITY> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "0.6696845" .
+
+<http://www.opmw.org/ontology/correspondsToTemplate>
+        a       rdf:Property .
+
+<http://purl.org/net/opmv/ns#wasControlledBy>
+        a       rdf:Property .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FORMATTEDDATA_11454516287417>
+        a             rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/wf-invocation#Variable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> ;
+        rdfs:comment  "center:x=1600.7,y=221.33333333333334" ;
+        rdfs:label    "Workflow execution artifact: FormattedData_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMATNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FORMATTEDDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-07Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CALCULATEHOURLYAVERAGESNODE_31454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process CalculateHourlyAveragesNode_3" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FILTEREDDATA_31454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CALCULATEHOURLYAVERAGES> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to CalculateHourlyAveragesNode_3" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/CalculateHourlyAverages/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCULATIONNODE1454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process MetabolismCalculationNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTDO1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTPARAMS1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCULATION> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MetabolismCalculationNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalculation/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/DATE_11454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 2010-03-08Z" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DATE> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "2010-03-08Z" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/FILTERTIMESTAMPSANDDATANODE_31454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process FilterTimestampsAndDataNode_3" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FORMATTEDDATA_31454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_FILTERTIMESTAMPSANDDATA> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to FilterTimestampsAndDataNode_3" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/FilterTimestampsAndData/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.wings-workflows.org/ontology/workflow.owl#DataVariable>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/REAERATIONPARAMS_21454516287417>
+        a             <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.w3.org/ns/prov#Entity> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Reaeration_Empirical_Results> ;
+        rdfs:comment  "center:x=191.60000000000002,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: ReaerationParams_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDMNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_REAERATIONPARAMS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Reaeration_SMN_2010-03-09Z_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "EDM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: -120.97618" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LONGITUDE> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "-120.97618" .
+
+<http://purl.org/dc/elements/1.1/rights>
+        a       owl:DatatypeProperty .
+
+<http://openprovenance.org/model/opmo#account>
+        a       rdf:Property .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/METABOLISMCALCULATIONNODE_21454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionProcess> , <http://purl.org/net/opmv/ns#Process> ;
+        rdfs:label  "Execution process MetabolismCalculationNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTPARAMS_21454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTDO_21454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE_21454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCULATION> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to MetabolismCalculationNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/MetabolismCalculation/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data>
+        a       owl:Class .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#PlotImage>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/ParameterVariable/VELOCITY_21454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 0.6055446" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_VELOCITY> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "0.6055446" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE_21454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionProcess> , <http://purl.org/net/opmv/ns#Process> ;
+        rdfs:label  "Execution process NightTimeModelNode_2" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_21454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LATITUDE1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_31454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/LONGITUDE1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_NIGHTTIMEMODEL> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to NightTimeModelNode_2" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/NightTimeModel/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://purl.org/net/wf-invocation#Variable>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FORMATTEDDATA_21454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , rdfs:Resource , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> ;
+        rdfs:comment  "center:x=828.5000000000001,y=221.33333333333334" ;
+        rdfs:label    "Workflow execution artifact: FormattedData_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMATNODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FORMATTEDDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-08Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/MERGEDRESULTS1454516287417>
+        a             <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , rdfs:Resource , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://purl.org/net/wf-invocation#Variable> ;
+        rdfs:comment  "center:x=1909.8000000000002,y=1269.3333333333333" ;
+        rdfs:label    "Workflow execution artifact: MergedResults1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/MERGEMETABOLISMRESULTSNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_MERGEDRESULTS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Metabolism_SMN_2010-03-07Z_NTM_EDM"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CALCULATEHOURLYAVERAGESNODE1454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process CalculateHourlyAveragesNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FILTEREDDATA1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CALCULATEHOURLYAVERAGES> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to CalculateHourlyAveragesNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/CalculateHourlyAverages/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/ontology/WorkflowExecutionAccount>
+        a       owl:Class .
+
+rdfs:comment  a  owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPARAMETERSFILENODE1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionProcess> , <http://purl.org/net/opmv/ns#Process> ;
+        rdfs:label  "Execution process CreateParametersFileNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/ParameterVariable/VELOCITY1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/DATE1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/FLOW1454516287417> , <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/HOURLYDATA_11454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/SLOPE1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/BARPRESS1454516287417> , <http://www.opmw.org/export/resource/ParameterVariable/DEPTH1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to CreateParametersFileNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/CreateParametersFile/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/ParameterVariable/DATE_21454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 2010-03-09Z" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DATE> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "2010-03-09Z" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DAILYDATA1454516287417>
+        a             <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/opmv/ns#Artifact> , rdfs:Resource ;
+        rdfs:comment  "center:x=2221.1000000000004,y=221.33333333333334" ;
+        rdfs:label    "Workflow execution artifact: DailyData1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_DAILYDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/CDEC_WEATHER_2010_03_06"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.2150836" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1868.2474" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-05" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.7402442" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/FILTERTIMESTAMPSANDDATANODE1454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process FilterTimestampsAndDataNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FORMATTEDDATA1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_FILTERTIMESTAMPSANDDATA> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to FilterTimestampsAndDataNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/FilterTimestampsAndData/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PR1454516287417>
+        a             rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#PlotImage> , <http://purl.org/net/opmv/ns#Artifact> , <http://purl.org/net/wf-invocation#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:comment  "center:x=1464.3000000000002,y=1444.0" ;
+        rdfs:label    "Workflow execution artifact: PR1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPLOTSNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PR> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/PR-erc3ephf5mdgon1uznpsx71j8"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#plotType>
+                "PR" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Parameters>
+        a       owl:Class .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Metabolism_Estimates>
+        a       owl:Class .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/SUM_CORRDO1454516287417>
+        a             <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#PlotImage> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:comment  "center:x=1987.9,y=1444.0" ;
+        rdfs:label    "Workflow execution artifact: Sum_CorrDO1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPLOTSNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_SUM_CORRDO> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Sum_CorrDO-arrdop0ystv29twpkz4p4ypum"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#plotType>
+                "Sum_CorrDO" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DAILYDATA_21454516287417>
+        a             <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , rdfs:Resource , <http://purl.org/net/wf-invocation#Variable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> ;
+        rdfs:comment  "center:x=828.5000000000001,y=46.66666666666667" ;
+        rdfs:label    "Workflow execution artifact: DailyData_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_DAILYDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/CDEC_WEATHER_2010_03_08"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Reaeration_Empirical_Results>
+        a       owl:Class .
+
+<http://purl.org/net/opmv/ns#Agent>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FILTEREDDATA_11454516287417>
+        a             <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://purl.org/net/wf-invocation#Variable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Filtered_Sensor_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , rdfs:Resource , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://www.w3.org/ns/prov#Entity> ;
+        rdfs:comment  "center:x=1600.7,y=396.0" ;
+        rdfs:label    "Workflow execution artifact: FilteredData_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/FILTERTIMESTAMPSANDDATANODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FILTEREDDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-07Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.1953502" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1835.8763" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.73136413" .
+
+<http://purl.org/net/opmv/ns#wasGeneratedBy>
+        a       rdf:Property .
+
+<http://www.opmw.org/ontology/hasStatus>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/ParameterVariable/DEPTH1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 1.1953502" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DEPTH> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "1.1953502" .
+
+<http://purl.org/net/opmv/ns#Artifact>
+        a       owl:Class .
+
+<http://www.wings-workflows.org/ontology/workflow.owl#Variable>
+        a       owl:Class .
+
+<http://www.opmw.org/ontology/overallStartTime>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/REAERATIONEDMNODE_11454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process ReaerationEDMNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PARAMETERSFILE_11454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_REAERATIONEDM> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to ReaerationEDMNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/ReaerationEDM/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/ontology/hasExecutableComponent>
+        a       rdf:Property .
+
+<http://www.opmw.org/ontology/hasValue>
+        a       owl:DatatypeProperty .
+
+<http://purl.org/net/opmv/ns#Process>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DAILYDATA_31454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.w3.org/ns/prov#Entity> , rdfs:Resource , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/wf-invocation#Variable> ;
+        rdfs:comment  "center:x=231.20000000000002,y=46.66666666666667" ;
+        rdfs:label    "Workflow execution artifact: DailyData_31454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_DAILYDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/CDEC_WEATHER_2010_03_09"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "0.9157512" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1377.2166" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-08" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6055446" .
+
+<http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Mean_Night_DO>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FILTEREDDATA_21454516287417>
+        a             <http://www.w3.org/ns/prov#Entity> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Filtered_Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> ;
+        rdfs:comment  "center:x=828.5000000000001,y=396.0" ;
+        rdfs:label    "Workflow execution artifact: FilteredData_21454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/FILTERTIMESTAMPSANDDATANODE_21454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FILTEREDDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Filtered_SMN_2010-03-08Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMATNODE1454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process ConvertToStandardFormatNode" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/DAILYDATA1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CONVERTTOSTANDARDFORMAT> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to ConvertToStandardFormatNode" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/ConvertToStandardFormat/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .
+
+<http://www.opmw.org/export/resource/ParameterVariable/FLOW1454516287417>
+        a           <http://www.opmw.org/ontology/WorkflowExecutionArtifact> ;
+        rdfs:label  "Parameter variable with value: 1835.8763" ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_FLOW> ;
+        <http://www.opmw.org/ontology/hasValue>
+                "1835.8763" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/NIGHTPARAMS_11454516287417>
+        a             <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#NTM_Parameters> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://purl.org/net/opmv/ns#Artifact> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Parameters> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> ;
+        rdfs:comment  "center:x=1079.3000000000002,y=920.0" ;
+        rdfs:label    "Workflow execution artifact: NightParams_11454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/NIGHTTIMEMODELNODE_11454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTPARAMS> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/NTMParams_SMN_2010-03-08Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.0582844" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1611.0309" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-07" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.6696845" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/PHOTO_REST1454516287417>
+        a             rdfs:Resource , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.w3.org/ns/prov#Entity> , <http://purl.org/net/wf-invocation#Variable> , <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#PlotImage> ;
+        rdfs:comment  "center:x=1708.5000000000002,y=1444.0" ;
+        rdfs:label    "Workflow execution artifact: Photo_Rest1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CREATEPLOTSNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PHOTO_REST> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Photo_Rest-6ymvgmccbxafokjxryjn50ziu"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-06" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#plotType>
+                "Photo_Rest" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#usedAlgorithm>
+                "NTM_EDM" .
+
+rdfs:label  a   rdf:Property , owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FORMATTEDDATA1454516287417>
+        a             <http://purl.org/net/opmv/ns#Artifact> , <http://www.wings-workflows.org/ontology/workflow.owl#Variable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Sensor_Data> , rdfs:Resource , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Sensor_Data> , <http://purl.org/net/wf-invocation#Variable> , <http://www.wings-workflows.org/ontology/workflow.owl#DataVariable> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Daily_Data> , <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#Formatted_Sensor_Data> , <http://www.opmw.org/ontology/WorkflowExecutionArtifact> , <http://www.w3.org/ns/prov#Entity> ;
+        rdfs:comment  "center:x=2221.1000000000004,y=396.0" ;
+        rdfs:label    "Workflow execution artifact: FormattedData1454516287417" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#wasGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowExecutionProcess/CONVERTTOSTANDARDFORMATNODE1454516287417> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateArtifact>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FORMATTEDDATA> ;
+        <http://www.opmw.org/ontology/hasLocation>
+                "/usr/share/tomcat6/storage/users/admin/Water/data/Formatted_SMN_2010-03-06Z"^^xsd:anyURI ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#barpress>
+                "760" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#depth>
+                "1.2150836" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#flow>
+                "1868.2474" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forDate>
+                "2010-03-05" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#forSite>
+                "SMN" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLatitude>
+                "37.347214" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#siteLongitude>
+                "-120.97618" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#slope>
+                "0.0001" ;
+        <http://www.wings-workflows.org/wings-portal/export/users/admin/Water/data/ontology.owl#velocity>
+                "0.7402442" .
+
+<http://www.opmw.org/export/resource/WorkflowExecutionProcess/CALCULATEHOURLYAVERAGESNODE_11454516287417>
+        a           <http://purl.org/net/opmv/ns#Process> , <http://www.opmw.org/ontology/WorkflowExecutionProcess> ;
+        rdfs:label  "Execution process CalculateHourlyAveragesNode_1" ;
+        <http://openprovenance.org/model/opmo#account>
+                <http://www.opmw.org/export/resource/WorkflowExecutionAccount/ACCOUNT1454516287417> ;
+        <http://purl.org/net/opmv/ns#used>
+                <http://www.opmw.org/export/resource/WorkflowExecutionArtifact/FILTEREDDATA_11454516287417> ;
+        <http://purl.org/net/opmv/ns#wasControlledBy>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://www.opmw.org/ontology/correspondsToTemplateProcess>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CALCULATEHOURLYAVERAGES> ;
+        <http://www.opmw.org/ontology/hasExecutableComponent>
+                [ rdfs:label  "Executable Component associated to CalculateHourlyAveragesNode_1" ;
+                  <http://www.opmw.org/ontology/hasLocation>
+                          "/usr/share/tomcat6/storage/users/admin/Water/code/library/CalculateHourlyAverages/run"
+                ] ;
+        <http://www.opmw.org/ontology/hasStatus>
+                "SUCCESS" .

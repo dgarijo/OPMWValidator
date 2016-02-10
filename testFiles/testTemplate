@@ -1,0 +1,586 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.w3.org/ns/prov#Plan>
+        a       owl:Class .
+
+<http://www.opmw.org/extension/isGeneratedByAs_Photo_Rest>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a Photo_Rest"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+		
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PR>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable PR" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_PR>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/hasDimensionality>
+                "0"^^xsd:int ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/usesAs_date>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a date"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM>
+        a           <http://www.w3.org/ns/prov#Plan> , <http://www.opmw.org/ontology/WorkflowTemplate> ;
+        rdfs:label  "AquaFlow_NTM_EDM" ;
+        <http://purl.org/dc/terms/contributor>
+                <http://www.opmw.org/export/resource/Agent/ADMIN> ;
+        <http://purl.org/dc/terms/modified>
+                "2014-10-03T06:30:50Z"^^xsd:dateTime ;
+        <http://www.opmw.org/ontology/hasNativeSystemTemplate>
+                "http://www.wings-workflows.org/wings-portal/export/users/admin/Water/workflows/AquaFlow_NTM_EDM.owl#AquaFlow_NTM_EDM"^^xsd:anyURI ;
+        <http://www.opmw.org/ontology/versionNumber>
+                "3"^^xsd:int ;
+        <http://www.w3.org/ns/prov#hadPrimarySource>
+                "http://www.wings-workflows.org/wings-portal/export/users/admin/Water/workflows/AquaFlow_NTM_EDM.owl#AquaFlow_NTM_EDM"^^xsd:anyURI .
+
+<http://www.opmw.org/extension/usesAs_Longitude>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a Longitude"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_NIGHTTIMEMODEL>
+        <http://www.opmw.org/extension/usesAs_InputHourlyData>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> ;
+        <http://www.opmw.org/extension/usesAs_Latitude>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LATITUDE> ;
+        <http://www.opmw.org/extension/usesAs_Longitude>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LONGITUDE> ;
+        <http://www.opmw.org/extension/usesAs_PrevDayHourlyData>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LONGITUDE> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LATITUDE> .
+		
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPARAMETERSFILE>
+        <http://www.opmw.org/extension/usesAs_barpress>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_BARPRESS> ;
+        <http://www.opmw.org/extension/usesAs_date>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DATE> ;
+        <http://www.opmw.org/extension/usesAs_depth>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DEPTH> ;
+        <http://www.opmw.org/extension/usesAs_flow>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_FLOW> ;
+        <http://www.opmw.org/extension/usesAs_slope>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_SLOPE> ;
+        <http://www.opmw.org/extension/usesAs_velocity>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_VELOCITY> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_FLOW> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_VELOCITY> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_SLOPE> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DATE> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_BARPRESS> , <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DEPTH> .
+				
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FORMATTEDDATA>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable FormattedData" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_FormattedSensorData>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CONVERTTOSTANDARDFORMAT> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CONVERTTOSTANDARDFORMAT> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS>
+        <http://www.opmw.org/extension/usesAs_InputMetabolismFiles>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_MERGEDRESULTS> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_MERGEDRESULTS> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_CR24>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a CR24"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_MergedResults>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a MergedResults"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/usesAs_depth>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a depth"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_MERGEDRESULTS>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable MergedResults" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_MergedResults>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_MERGEMETABOLISMRESULTS> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_MERGEMETABOLISMRESULTS> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/usesAs_NightParameters>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a NightParameters"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_Sum_CorrDO>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a Sum_CorrDO"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/usesAs_Latitude>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a Latitude"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/ontology/isParameterOfTemplate>
+        a       rdf:Property .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCEMPIRICAL>
+        <http://www.opmw.org/extension/usesAs_InputHourlyData>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> ;
+        <http://www.opmw.org/extension/usesAs_Latitude>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LATITUDE> ;
+        <http://www.opmw.org/extension/usesAs_Longitude>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LONGITUDE> ;
+        <http://www.opmw.org/extension/usesAs_PrevDayHourlyData>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> ;
+        <http://www.opmw.org/extension/usesAs_ReaerationParameters>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_REAERATIONPARAMS> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_REAERATIONPARAMS> , <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LATITUDE> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LONGITUDE> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_FilteredSensorData>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a FilteredSensorData"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/usesAs_InputParameters>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a InputParameters"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/ontology/uses>
+        a       rdf:Property .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CONVERTTOSTANDARDFORMAT>
+        <http://www.opmw.org/extension/usesAs_InputSensorData>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_DAILYDATA> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_DAILYDATA> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_OutputParameters>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a OutputParameters"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_FLOW>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/ParameterVariable> ;
+        rdfs:label  "Parameter variable flow" ;
+        <http://www.opmw.org/ontology/isParameterOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+				
+
+<http://www.opmw.org/ontology/WorkflowTemplate>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTDO>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable NightDO" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_MeanNightDO>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_NIGHTTIMEMODEL> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_NIGHTTIMEMODEL> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_DAILYDATA>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable DailyData" ;
+        <http://www.opmw.org/ontology/hasDimensionality>
+                "1"^^xsd:int ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.w3.org/ns/prov#hadPrimarySource>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTPARAMS>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable NightParams" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_OutputNTMParams>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_NIGHTTIMEMODEL> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_NIGHTTIMEMODEL> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/ontology/DataVariable>
+        a       owl:Class .
+
+<http://purl.org/dc/terms/contributor>
+        a       rdf:Property .
+
+<http://www.opmw.org/ontology/versionNumber>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/extension/usesAs_InputHourlyData>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a InputHourlyData"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/extension/usesAs_InputDOFile>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a InputDOFile"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_REAERATIONPARAMS>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable ReaerationParams" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_ReaerationResults>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_REAERATIONEDM> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_REAERATIONEDM> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_OutputHourlyData>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a OutputHourlyData"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_SUM_CORRDO>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable Sum_CorrDO" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_Sum_CorrDO>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/hasDimensionality>
+                "0"^^xsd:int ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMEDM>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable MetabolismEDM" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_MetabolismResults>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCEMPIRICAL> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCEMPIRICAL> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NDM>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable NDM" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_NDM>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/hasDimensionality>
+                "0"^^xsd:int ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/ontology/hasNativeSystemTemplate>
+        a       owl:DatatypeProperty .
+
+rdfs:label  a   owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_FILTERTIMESTAMPSANDDATA>
+        <http://www.opmw.org/extension/usesAs_InputSensorData>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FORMATTEDDATA> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FORMATTEDDATA> .
+
+<http://www.w3.org/ns/prov#Agent>
+        a       owl:Class .
+
+<http://www.opmw.org/ontology/isVariableOfTemplate>
+        a       rdf:Property .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_HOURLYDATA>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable HourlyData" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_OutputHourlyData>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CALCULATEHOURLYAVERAGES> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CALCULATEHOURLYAVERAGES> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/usesAs_flow>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a flow"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/ontology/ParameterVariable>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_ALGORITHM>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable Algorithm" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_Algorithm>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_MERGEMETABOLISMRESULTS> ;
+        <http://www.opmw.org/ontology/hasDimensionality>
+                "0"^^xsd:int ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_MERGEMETABOLISMRESULTS> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LONGITUDE>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/ParameterVariable> ;
+        rdfs:label  "Parameter variable Longitude" ;
+        <http://www.opmw.org/ontology/isParameterOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PHOTO_REST>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable Photo_Rest" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_Photo_Rest>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/hasDimensionality>
+                "0"^^xsd:int ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCULATION>
+        <http://www.opmw.org/extension/usesAs_InputDOFile>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTDO> ;
+        <http://www.opmw.org/extension/usesAs_InputParameters>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PARAMETERSFILE> ;
+        <http://www.opmw.org/extension/usesAs_Latitude>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LATITUDE> ;
+        <http://www.opmw.org/extension/usesAs_Longitude>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LONGITUDE> ;
+        <http://www.opmw.org/extension/usesAs_NightParameters>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTPARAMS> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LATITUDE> , <http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LONGITUDE> , <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PARAMETERSFILE> , <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTPARAMS> , <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_NIGHTDO> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_MeanNightDO>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a MeanNightDO"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/ontology/WorkflowTemplateArtifact>
+        a       owl:Class .
+
+<http://www.opmw.org/extension/usesAs_InputSensorData>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a InputSensorData"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FILTEREDDATA>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable FilteredData" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_FilteredSensorData>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_FILTERTIMESTAMPSANDDATA> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_FILTERTIMESTAMPSANDDATA> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_MetabolismResults>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a MetabolismResults"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/usesAs_NTMResults>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a NTMResults"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_NDM>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a NDM"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/usesAs_velocity>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a velocity"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_VELOCITY>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/ParameterVariable> ;
+        rdfs:label  "Parameter variable velocity" ;
+        <http://www.opmw.org/ontology/isParameterOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/usesAs_slope>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a slope"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_Algorithm>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a Algorithm"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_ReaerationResults>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a ReaerationResults"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://purl.org/net/opmv/ns#Agent>
+        a       owl:Class .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CALCULATEHOURLYAVERAGES>
+        <http://www.opmw.org/extension/usesAs_InputSensorData>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FILTEREDDATA> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_FILTEREDDATA> .
+
+<http://www.opmw.org/extension/usesAs_ReaerationParameters>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a ReaerationParameters"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/extension/usesAs_OtherResults>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a OtherResults"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_SLOPE>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/ParameterVariable> ;
+        rdfs:label  "Parameter variable slope" ;
+        <http://www.opmw.org/ontology/isParameterOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/Agent/ADMIN>
+        a           <http://www.w3.org/ns/prov#Agent> , <http://purl.org/net/opmv/ns#Agent> ;
+        rdfs:label  "Agent admin" .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_GPP>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable GPP" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_GPP>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/hasDimensionality>
+                "0"^^xsd:int ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://purl.org/dc/terms/modified>
+        a       owl:DatatypeProperty .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_MERGEMETABOLISMRESULTS>
+        <http://www.opmw.org/extension/usesAs_NTMResults>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMNTM> ;
+        <http://www.opmw.org/extension/usesAs_OtherResults>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMEDM> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMNTM> , <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMEDM> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_PR>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a PR"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DATE>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/ParameterVariable> ;
+        rdfs:label  "Parameter variable date" ;
+        <http://www.opmw.org/ontology/isParameterOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_FormattedSensorData>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a FormattedSensorData"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_OutputMetabolismEstimates>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a OutputMetabolismEstimates"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_OutputNTMParams>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a OutputNTMParams"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/ontology/isGeneratedBy>
+        a       rdf:Property .
+
+<http://www.opmw.org/extension/usesAs_PrevDayHourlyData>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a PrevDayHourlyData"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_METABOLISMNTM>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable MetabolismNTM" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_OutputMetabolismEstimates>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCULATION> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_METABOLISMCALCULATION> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_REAERATIONEDM>
+        <http://www.opmw.org/extension/usesAs_InputParameters>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/uses>
+                <http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PARAMETERSFILE> .
+
+<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_DEPTH>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/ParameterVariable> ;
+        rdfs:label  "Parameter variable depth" ;
+        <http://www.opmw.org/ontology/isParameterOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/isGeneratedByAs_GPP>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been generated as a GPP"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/isGeneratedBy> .
+
+<http://www.opmw.org/extension/usesAs_barpress>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a barpress"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_BARPRESS>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/ParameterVariable> ;
+        rdfs:label  "Parameter variable barpress" ;
+        <http://www.opmw.org/ontology/isParameterOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/ParameterVariable/AQUAFLOW_NTM_EDM_LATITUDE>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/ParameterVariable> ;
+        rdfs:label  "Parameter variable Latitude" ;
+        <http://www.opmw.org/ontology/isParameterOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_PARAMETERSFILE>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable ParametersFile" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_OutputParameters>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPARAMETERSFILE> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/export/resource/DataVariable/AQUAFLOW_NTM_EDM_CR24>
+        a           <http://www.opmw.org/ontology/WorkflowTemplateArtifact> , <http://www.opmw.org/ontology/DataVariable> ;
+        rdfs:label  "Data variable CR24" ;
+        <http://www.opmw.org/extension/isGeneratedByAs_CR24>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/hasDimensionality>
+                "0"^^xsd:int ;
+        <http://www.opmw.org/ontology/isGeneratedBy>
+                <http://www.opmw.org/export/resource/WorkflowTemplateProcess/AQUAFLOW_NTM_EDM_CREATEPLOTS> ;
+        <http://www.opmw.org/ontology/isVariableOfTemplate>
+                <http://www.opmw.org/export/resource/WorkflowTemplate/AQUAFLOW_NTM_EDM> .
+
+<http://www.opmw.org/extension/usesAs_InputMetabolismFiles>
+        a                   rdf:Property ;
+        rdfs:label          "Property that indicates that a resource has been used as a InputMetabolismFiles"@EN ;
+        rdfs:subPropertyOf  <http://www.opmw.org/ontology/uses> .
+
+<http://www.opmw.org/ontology/hasDimensionality>
+        a       owl:DatatypeProperty .
