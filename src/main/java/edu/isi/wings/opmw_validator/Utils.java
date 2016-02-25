@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package es.isi.opmwvalidator;
+package edu.isi.wings.opmw_validator;
 
 import java.io.File;
 import com.hp.hpl.jena.ontology.OntModel;

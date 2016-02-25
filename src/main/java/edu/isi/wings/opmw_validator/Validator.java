@@ -13,9 +13,10 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package es.isi.opmwvalidator;
+package edu.isi.wings.opmw_validator;
 
 import com.hp.hpl.jena.ontology.OntModel;
+import com.hp.hpl.jena.query.ResultSetFormatter;
 
 /**
  * Class designed to run the tests against a repository of templates and runs.
@@ -71,12 +72,14 @@ public class Validator {
         result+="\t"+isTestFailed(Integer.parseInt(Utils.getCountOf(Queries.COUNT_TEMPL_PROCESSES_WITHOUT_TEMPLATE_OPMW, m, "countProc")))+"\n";
         result+="#TEST"+(++n)+": ALL TEMPLATE PROCESSES MUST BELONG TO A TEMPLATE (test in PPlan).\n";
         result+="\t"+isTestFailed(Integer.parseInt(Utils.getCountOf(Queries.COUNT_TEMPL_PROCESSES_WITHOUT_TEMPLATE_PPLAN, m, "countProc")))+"\n";
+//        ResultSetFormatter.out(System.out,Utils.queryLocalRepository(Queries.SELECT_TEMPL_PROCESSES_WITHOUT_TEMPLATE_PPLAN, m));
         result+="#TEST"+(++n)+": ARE THERE ANY UNDECLARED WORKFLOW TEMPLATE PROCESSES?.\n";
         result+="\t"+isTestFailed(Integer.parseInt(Utils.getCountOf(Queries.COUNT_UNDECLARED_PROCESSES, m, "countProc")))+"\n";
         result+="#TEST"+(++n)+": ALL TEMPLATE PROCESSES MUST USE OR GENERATE A TEMPLATE ARTIFACT (test in OPMW).\n";
         result+="\t"+isTestFailed(Integer.parseInt(Utils.getCountOf(Queries.COUNT_TEMPL_PROCESS_WITHOUT_BINDING_TO_ARTIFACT_OPMW, m, "countProc")))+"\n";
         result+="#TEST"+(++n)+": ALL TEMPLATE PROCESSES MUST USE OR GENERATE A TEMPLATE ARTIFACT (test in P-PLAN).\n";
         result+="\t"+isTestFailed(Integer.parseInt(Utils.getCountOf(Queries.COUNT_TEMPL_PROCESS_WITHOUT_BINDING_TO_ARTIFACT_PPLAN, m, "countProc")))+"\n";
+        
         //templates
         result+="#TEST"+(++n)+": (OPTIONAL TEST) TEMPLATES SHOULD HAVE A VERSION NUMBER.\n";
         result+="\t"+isTestFailed(Integer.parseInt(Utils.getCountOf(Queries.COUNT_TEMPL_WITHOUT_VERSION_NUMBER, m, "countT")))+"\n";

@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package es.isi.opmwvalidator;
+package edu.isi.wings.opmw_validator;
 
 import com.hp.hpl.jena.ontology.OntModel;
 
@@ -38,8 +38,8 @@ public class Main {
             }
             i++;
         }
-//        OntModel m = Utils.loadDirectory("C:\\Users\\dgarijo\\Dropbox\\NetBeansProjects\\OPMWValidator\\testFiles");
-        OntModel m = Utils.loadDirectory(path);
+        OntModel m = Utils.loadDirectory("C:\\Users\\dgarijo\\Dropbox\\NetBeansProjects\\OPMWValidator\\testFiles");
+//        OntModel m = Utils.loadDirectory(path);
         String s = Statistics.getStats(m);
         s+= Validator.validateRepo(m);
         System.out.println(s);

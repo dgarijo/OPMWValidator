@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package es.isi.opmwvalidator;
+package edu.isi.wings.opmw_validator;
 
 /**
  * Queries that contain the tests to be performed against templates and runs.
@@ -237,7 +237,7 @@ public class Queries {
     public static final String COUNT_TEMPL_PROCESSES_WITHOUT_TEMPLATE_OPMW=PROCESS_COUNT+TEMPL_PROCESSES_WITHOUT_TEMPLATE_OPMW;
    
     private static final String TEMPL_PROCESSES_WITHOUT_TEMPLATE_PPLAN=""
-            + "?process a <http://purl.org/net/p-plan#Plan>."
+            + "?process a <http://purl.org/net/p-plan#Step>."
             + "FILTER NOT EXISTS{"
             + "?process <http://purl.org/net/p-plan#isStepOfPlan> ?temp."
             + "}"
